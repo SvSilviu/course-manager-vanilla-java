@@ -41,4 +41,19 @@ public class ControlUser {
     }
 
 
+    //todo functie ce returneaza un user dupa paorla si email
+
+    public User usernameSiParola(String username, String parola) {
+        for (User user : listaUsers) {
+            if (user.getEmail().equals(username) && user.getPassword().equals(parola)){
+
+                return  user;
+            }
+
+        }
+        return  null;
+    }
+
+//    public User creareUser()
+
 }

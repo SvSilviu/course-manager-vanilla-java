@@ -5,6 +5,7 @@ import controllers.ControlEnrolment;
 import models.Course;
 import models.Enrolment;
 import models.User;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -15,10 +16,10 @@ public class ViewStudent {
     private ControlCourse controlCourse;
     private User userLogat;
 
-    public ViewStudent() {
+    public ViewStudent(User user) {
         controlCourse = new ControlCourse();
         controlEnrolment = new ControlEnrolment();
-        userLogat = new User(1, "Vasile", "Andrei", "vasile@gmail.com", "parolaVasile", 24,"PROFESOR");
+        userLogat = user;
     }
 
     public void play() {
@@ -99,7 +100,7 @@ public class ViewStudent {
         }
     }
 
-    public void celMaiFrecventat(){
+    public void celMaiFrecventat() {
 
         int curs = controlEnrolment.celMaiFrecventatCurs();
 
