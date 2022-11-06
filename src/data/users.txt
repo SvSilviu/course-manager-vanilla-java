@@ -1,0 +1,5 @@
+1,Vasile,Andrei,vasile@gmail.com,parolaVasile,24,profesor
+2,Ion,Popescu,ionpopescu@yahoo.com,parolaIon,22,student
+3,Marius,Ionescu,mariusionescu@yahoo.com,parolaIonescu,43,profesor
+4,Mircea,Andrei,andreion@gmail.com,parolaion,22,student
+5,Mihai,Roman,romanmihai122@gmail.com,parolamihai,27,profesor
