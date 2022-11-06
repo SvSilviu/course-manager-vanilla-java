@@ -1,9 +1,9 @@
+import view.ViewLogin;
 import view.ViewProfesor;
 import view.ViewStudent;
 
 public class Main {
     public static void main(String[] args) {
-
 //       ViewStudent view = new ViewStudent();
 //       view.play();
 
@@ -14,9 +14,11 @@ public class Main {
 //        ControlEnrolment controlEnrolment = new ControlEnrolment();
 //        controlEnrolment.afisareEnrolment();
 
-        ViewProfesor viewProfesor = new ViewProfesor();
-
-        viewProfesor.play();
+//        ViewProfesor viewProfesor = new ViewProfesor();
+//
+//        viewProfesor.play();
+        ViewLogin viewLogin = new ViewLogin();
+        viewLogin.play();
 
     }
 }

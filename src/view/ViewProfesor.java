@@ -20,11 +20,11 @@ public class ViewProfesor {
     private ControlUser controlUser;
     private User profesorlogat;
 
-    public ViewProfesor() {
+    public ViewProfesor(User user) {
         controlCourse = new ControlCourse();
         controlEnrolment = new ControlEnrolment();
         controlUser = new ControlUser();
-        profesorlogat = new User(5, "Marin", "Istrate", "istratemarin@yahoo.com", "parola123", 44, "Profesor");
+        profesorlogat = user;
     }
 
     public void play() {
