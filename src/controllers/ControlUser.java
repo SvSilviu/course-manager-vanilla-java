@@ -33,9 +33,9 @@ public class ControlUser {
 
     public void afisare() {
 
-        for (int i = 0; i < listaUsers.size(); i++) {
+        for (User listaUser : listaUsers) {
             System.out.println(" ");
-            System.out.println(listaUsers.get(i).descriere());
+            System.out.println(listaUser.descriere());
             System.out.println(" ");
         }
     }
@@ -45,15 +45,49 @@ public class ControlUser {
 
     public User usernameSiParola(String username, String parola) {
         for (User user : listaUsers) {
-            if (user.getEmail().equals(username) && user.getPassword().equals(parola)){
+            if (user.getEmail().equals(username) && user.getPassword().equals(parola)) {
 
-                return  user;
+                return user;
             }
 
         }
-        return  null;
+        return null;
     }
 
-//    public User creareUser()
+    public void creareUser() {
+
+        Scanner scanner = new Scanner(System.in);
+        User user = new User();
+        System.out.println("Introduceti un nume");
+        String firstName = scanner.nextLine();
+        user.setFirstName(firstName);
+
+        System.out.println("Introduceti un prenume");
+        String lastName = scanner.nextLine();
+        user.setLastName(lastName);
+
+        System.out.println("Introduceti un email");
+        String email = scanner.nextLine();
+        user.setEmail(email);
+
+        System.out.println("Introduceti o parola");
+        String password = scanner.nextLine();
+        user.setPassword(password);
+
+        System.out.println("Introduceti varsta");
+        int age = Integer.parseInt(scanner.nextLine());
+        user.setAge(age);
+
+        System.out.println("Introduceti tipul de user");
+        String type = scanner.nextLine();
+        user.setType(type);
+
+        this.listaUsers.add(user);
+
+        System.out.println("");
+        System.out.println("User adaugat !");
+        System.out.println("");
+
+    }
 
 }

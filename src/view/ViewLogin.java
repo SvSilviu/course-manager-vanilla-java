@@ -39,6 +39,9 @@ public class ViewLogin {
                 case 1:
                     login();
                     break;
+                case 2:
+                    addNewUser();
+                    break;
                 default:
                     meniu();
                     break;
@@ -48,7 +51,7 @@ public class ViewLogin {
 
     }
 
-   public void login() {
+    public void login() {
         System.out.println("Introduceti email-ul");
         String email = scanner.nextLine();
         System.out.println("Introduceti parola");
@@ -70,6 +73,11 @@ public class ViewLogin {
         } else {
             System.out.println("Credentiale incorecte ");
         }
+    }
+
+    public void addNewUser() {
+
+        controlUser.creareUser();
 
 
     }
