@@ -16,7 +16,6 @@ public class Course {
         this.profesorId = profesorId;
     }
 
-    //"1,matematica,stiinte"=>["1","matematica","stiinte"]
     public Course(String text) {
         String[] propr = text.split(",");
         this.id = Integer.parseInt(propr[0]);

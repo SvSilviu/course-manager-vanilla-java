@@ -18,28 +18,28 @@ public class ControlEnrolment {
     public void loadEnrolment() {
 
         try {
-            File file =new File("C:\\mycode\\oop\\incapsualrea\\proiectScoala\\src\\data\\enrolment.txt");
+            File file = new File("C:\\mycode\\oop\\incapsualrea\\proiectScoala\\src\\data\\enrolment.txt");
             Scanner scanner = new Scanner(file);
 
-            while (scanner.hasNextLine()){
+            while (scanner.hasNextLine()) {
                 String text = scanner.nextLine();
                 Enrolment enrolment = new Enrolment(text);
                 enrolmentArrayList.add(enrolment);
             }
-        }catch (Exception exception){
+        } catch (Exception exception) {
 
         }
 
     }
-    //todo:metoda ce primeste ca parametru un student id si retuneaza lista enrolemnturilor cu studentID respectiv
+    //todo:metoda ce primeste ca parametru un student id si retuneaza lista enrolemnturilor cu studentID respectiv.
 
     public ArrayList<Enrolment> listaEnrolmenturilor(int studentId) {
 
         ArrayList<Enrolment> enrolments = new ArrayList<>();
-        for (int i = 0; i < enrolmentArrayList.size(); i++) {
-            if (enrolmentArrayList.get(i).getUserID() == studentId) {
+        for (Enrolment enrolment : enrolmentArrayList) {
+            if (enrolment.getUserID() == studentId) {
 
-                enrolments.add(enrolmentArrayList.get(i));
+                enrolments.add(enrolment);
             }
         }
         return enrolments;
