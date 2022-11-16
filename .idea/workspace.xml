@@ -3,9 +3,17 @@
   <component name="ChangeListManager">
     <list default="true" id="34636ee7-469f-4436-a876-18c75c2a7f41" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proiectScoala.iml" beforeDir="false" afterPath="$PROJECT_DIR$/proiectScoala.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/ControlCourse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/ControlCourse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controllers/ControlEnrolment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/ControlEnrolment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controllers/ControlUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/ControlUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/courses.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/courses.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/enrolment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/enrolment.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/users.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/users.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/models/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Course.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/Enrolment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Enrolment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/ViewLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/ViewLogin.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -16,6 +24,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JUnit5 Test Class" />
         <option value="Class" />
       </list>
     </option>
@@ -36,22 +45,105 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;
   }
 }</component>
-  <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="controllers" />
+      <recent name="models" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.All in proiectScoala">
+    <configuration name="All in proiectScoala" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="proiectScoala" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ControlCourseTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="proiectScoala" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="controllers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="controllers" />
+      <option name="MAIN_CLASS_NAME" value="controllers.ControlCourseTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ControlCourseTest.test3ControlCourseLoadCourses" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="proiectScoala" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="controllers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="controllers" />
+      <option name="MAIN_CLASS_NAME" value="controllers.ControlCourseTest" />
+      <option name="METHOD_NAME" value="test3ControlCourseLoadCourses" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ControlCourseTest.testFindProfById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="proiectScoala" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="controllers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="controllers" />
+      <option name="MAIN_CLASS_NAME" value="controllers.ControlCourseTest" />
+      <option name="METHOD_NAME" value="testFindProfById" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ControlCourseTest.testNrDeCursuriDeTipReal" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="proiectScoala" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="controllers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="controllers" />
+      <option name="MAIN_CLASS_NAME" value="controllers.ControlCourseTest" />
+      <option name="METHOD_NAME" value="testNrDeCursuriDeTipReal" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.All in proiectScoala" />
+        <item itemvalue="JUnit.ControlCourseTest.testNrDeCursuriDeTipReal" />
+        <item itemvalue="JUnit.ControlCourseTest" />
+        <item itemvalue="JUnit.ControlCourseTest.testFindProfById" />
+        <item itemvalue="JUnit.ControlCourseTest.test3ControlCourseLoadCourses" />
       </list>
     </recent_temporary>
   </component>
@@ -65,5 +157,46 @@
       <updated>1666458374019</updated>
     </task>
     <servers />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/proiectScoala$ControlEnrolmentTest_testCelMaiFrecventatCurs.ic" NAME="ControlEnrolmentTest.testCelMaiFrecventatCurs Coverage Results" MODIFIED="1668446398228" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>controllers.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/proiectScoala$ControlCourseTest_testNrDeCursuriDeTipReal.ic" NAME="ControlCourseTest.testNrDeCursuriDeTipReal Coverage Results" MODIFIED="1668615529013" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>controllers.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/proiectScoala$ControlUserTest.ic" NAME="ControlUserTest Coverage Results" MODIFIED="1668451724881" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>controllers.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/proiectScoala$ControlCourseTest_testFindByName.ic" NAME="ControlCourseTest.testFindByName Coverage Results" MODIFIED="1668443082564" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>controllers.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/proiectScoala$UserTest_test3ControlCourseLoadCourses.ic" NAME="UserTest.test3ControlCourseLoadCourses Coverage Results" MODIFIED="1668015916168" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>models.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/proiectScoala$ControlCourseTest_testFindByDepartament.ic" NAME="ControlCourseTest.testFindByDepartament Coverage Results" MODIFIED="1668443173334" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>controllers.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/proiectScoala$ControlEnrolmentTest.ic" NAME="ControlEnrolmentTest Coverage Results" MODIFIED="1668446444010" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>controllers.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/proiectScoala$ControlCourseTest_testFindById.ic" NAME="ControlCourseTest.testFindById Coverage Results" MODIFIED="1668443063211" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>controllers.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/proiectScoala$UserTest.ic" NAME="UserTest Coverage Results" MODIFIED="1668014603055" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>models.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/proiectScoala$ControlCourseTest_testNrDeCursuriDeTipUman.ic" NAME="ControlCourseTest.testNrDeCursuriDeTipUman Coverage Results" MODIFIED="1668443691225" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>controllers.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/proiectScoala$ControlCourseTest.ic" NAME="ControlCourseTest Coverage Results" MODIFIED="1668614629473" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>controllers.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/proiectScoala$ControlEnrolmentTest_testLoadEnrolment.ic" NAME="ControlEnrolmentTest.testLoadEnrolment Coverage Results" MODIFIED="1668427872107" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>controllers.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/proiectScoala$ControlUserTest_testControlUserLoadUser.ic" NAME="ControlUserTest.testControlUserLoadUser Coverage Results" MODIFIED="1668446215366" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>controllers.*</FILTER>
+    </SUITE>
   </component>
 </project>

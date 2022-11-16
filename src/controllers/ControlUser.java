@@ -1,8 +1,11 @@
 package controllers;
 
+import models.Course;
 import models.User;
 
 import java.io.File;
+import java.io.FileWriter;
+import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -15,6 +18,7 @@ public class ControlUser {
     }
 
     public void loadStudent() {
+        this.listaUsers.clear();
 
         try {
             File file = new File("C:\\mycode\\oop\\incapsualrea\\proiectScoala\\src\\data\\users.txt");
@@ -54,39 +58,50 @@ public class ControlUser {
         return null;
     }
 
-    public void creareUser() {
+    public void creareUser(User user) {
 
-        Scanner scanner = new Scanner(System.in);
-        User user = new User();
-        System.out.println("Introduceti un nume");
-        String firstName = scanner.nextLine();
-        user.setFirstName(firstName);
 
-        System.out.println("Introduceti un prenume");
-        String lastName = scanner.nextLine();
-        user.setLastName(lastName);
-
-        System.out.println("Introduceti un email");
-        String email = scanner.nextLine();
-        user.setEmail(email);
-
-        System.out.println("Introduceti o parola");
-        String password = scanner.nextLine();
-        user.setPassword(password);
-
-        System.out.println("Introduceti varsta");
-        int age = Integer.parseInt(scanner.nextLine());
-        user.setAge(age);
-
-        System.out.println("Introduceti tipul de user");
-        String type = scanner.nextLine();
-        user.setType(type);
 
         this.listaUsers.add(user);
 
-        System.out.println("");
-        System.out.println("User adaugat !");
-        System.out.println("");
+
+
+    }
+
+    public void add(User user){
+        this.listaUsers.add(user);
+    }
+
+    public int size(){
+        return this.listaUsers.size();
+    }
+
+
+    public  String toSave(){
+
+        String text = "";
+
+        for (User u : listaUsers) {
+            text += u.toSave() + "\n";
+        }
+
+        return text;
+    }
+
+
+    public  void  save(){
+
+        try {
+            File file = new File("C:\\mycode\\oop\\incapsualrea\\proiectScoala\\src\\data\\users.txt");
+            FileWriter fileWriter = new FileWriter(file);
+            PrintWriter printWriter = new PrintWriter(fileWriter);
+            printWriter.print(this.toSave());
+
+            printWriter.close();
+        } catch (Exception exception) {
+            exception.printStackTrace();
+        }
+
 
     }
 
