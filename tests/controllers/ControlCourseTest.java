@@ -39,66 +39,27 @@ class ControlCourseTest {
 
     @Test
     public void test4FindById() {
-//preconditie actiune rezultat
-
         ControlCourse controlCourse = new ControlCourse();
-        Course c = controlCourse.findById(3);
-        assertEquals(3, c.getId());
-    }
-
-    @Test
-    public void testAfisare() {
-
-        ControlCourse controlCourse = new ControlCourse();
-        controlCourse.afisare();
-        //   assertEquals();
-
+        Course course = new Course(20, "Istorie", "uman", 1);
+        controlCourse.add(course);
+        assertEquals("uman", controlCourse.findById(20).getDepartament());
+        assertEquals("Istorie", controlCourse.findById(20).getName());
+        assertEquals(20, controlCourse.findById(20).getId());
+        assertEquals(1, controlCourse.findById(20).getProfesorId());
     }
 
     @Test
     public void testFindByName() {
 
         ControlCourse controlCourse = new ControlCourse();
-        Course course = controlCourse.findByName("Desen");
-        assertEquals("Desen", course.getName());
-
-    }
-
-    @Test
-    public void testFindById() {
-
-        ControlCourse controlCourse = new ControlCourse();
-        Course course = controlCourse.findById(1);
-        assertEquals(1, course.getId());
-    }
-
-    @Test
-    public void testFindByDepartament() {
-
-        ControlCourse controlCourse = new ControlCourse();
-
-        Course course = new Course(20, "Istorie", "uman", 1);
-        Course course1 = new Course(21, "Matematica", "real", 1);
-        Course course2 = new Course(22, "Fizica", "real", 1);
-        Course course3 = new Course(25, "Romana", "uman", 3);
-        Course course4 = new Course(44, "Chimie", "real", 5);
-
-        Course initial = controlCourse.findByDepartament("uman");
-
-        controlCourse.add(course);
-        controlCourse.add(course1);
-        controlCourse.add(course2);
+        Course course3 = new Course(44, "Chimie", "real", 5);
         controlCourse.add(course3);
-        controlCourse.add(course4);
 
-        ArrayList<Course> cursuri  = controlCourse.findByDepartament("departament")
+        assertEquals("Chimie", controlCourse.findByName("Chimie").getName());
+        assertEquals(44,controlCourse.findByName("Chimie").getId());
+        assertEquals("real",controlCourse.findByName("Chimie").getDepartament());
+        assertEquals(5,controlCourse.findByName("Chimie").getProfesorId());
 
-        for(int i = 0;i<controlCourse.size();i++){
-            if()
-        }
-
-
-        assertEquals(initial+2, course.getDepartament());
     }
 
     @Test
@@ -120,8 +81,17 @@ class ControlCourseTest {
     public void testNrDeCursuriDeTipUman() {
 
         ControlCourse controlCourse = new ControlCourse();
-        controlCourse.numarulDeCursuriDeTipUman();
-        assertEquals(4, controlCourse.numarulDeCursuriDeTipUman());
+
+        Course course = new Course(20, "Istorie", "uman", 1);
+        Course course3 = new Course(25, "Romana", "uman", 3);
+
+        int initial = controlCourse.numarulDeCursuriDeTipUman();
+
+        controlCourse.add(course);
+        controlCourse.add(course3);
+
+        assertEquals(initial+2,controlCourse.numarulDeCursuriDeTipUman());
+
     }
 
     @Test
