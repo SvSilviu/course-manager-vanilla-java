@@ -77,7 +77,7 @@ public class ViewLogin {
 
     public void addNewUser() {
 
-        controlUser.creareUser();
+
 
 
     }

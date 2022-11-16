@@ -3,6 +3,8 @@ package controllers;
 import models.Enrolment;
 
 import java.io.File;
+import java.io.FileWriter;
+import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -16,6 +18,8 @@ public class ControlEnrolment {
     }
 
     public void loadEnrolment() {
+
+        this.enrolmentArrayList.clear();
 
         try {
             File file = new File("C:\\mycode\\oop\\incapsualrea\\proiectScoala\\src\\data\\enrolment.txt");
@@ -113,7 +117,34 @@ public class ControlEnrolment {
         }
     }
 
+    public int size() {
+        return this.enrolmentArrayList.size();
+    }
 
+    public String toSave() {
+        String text = "";
+        for (Enrolment enrolment : enrolmentArrayList) {
+            text += enrolment.toSave() + "\n";
+        }
+        return text;
+    }
+
+    public void save() {
+
+        try {
+            File file = new File("C:\\mycode\\oop\\incapsualrea\\proiectScoala\\src\\data\\enrolment.txt");
+
+            FileWriter fileWriter = new FileWriter(file);
+            PrintWriter printWriter = new PrintWriter(fileWriter);
+            printWriter.print(this.toSave());
+            printWriter.close();
+        } catch (Exception exception) {
+
+        }
+
+    }
 }
+
+
 
 

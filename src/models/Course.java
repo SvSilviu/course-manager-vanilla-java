@@ -73,5 +73,9 @@ public class Course {
         return text;
     }
 
+    public String toSave() {
+        return this.id + "," + this.name + "," + this.departament + "," + this.profesorId;
+    }
+
 
 }

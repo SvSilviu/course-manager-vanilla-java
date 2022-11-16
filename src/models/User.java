@@ -111,4 +111,9 @@ public class User {
 
     }
 
+    public String toSave() {
+
+        return this.id + "," + this.firstName + "," + this.lastName + "," + this.email + "," + this.password + "," + this.age + "," + this.type;
+    }
+
 }

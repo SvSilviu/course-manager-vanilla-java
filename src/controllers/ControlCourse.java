@@ -3,6 +3,9 @@ package controllers;
 import models.Course;
 
 import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -17,6 +20,7 @@ public class ControlCourse {
 
     public void loadCourses() {
 
+        this.listaCursuri.clear();
 
         try {
 
@@ -141,11 +145,44 @@ public class ControlCourse {
     }
     //todo:functie ce  pirmeste ca parametru numele unui curs si sterge cursul
 
-    public void stergereCurs(String curs){
-         Course course=findByName(curs);
-         if(course!=null) {
-             this.listaCursuri.remove(course);
-         }
+    public void stergereCurs(String curs) {
+        Course course = findByName(curs);
+        if (course != null) {
+            this.listaCursuri.remove(course);
+        }
     }
 
+
+    public int size() {
+
+        return this.listaCursuri.size();
+    }
+
+    public String toSave() {
+
+        String text = "";
+        for (Course c : listaCursuri) {
+            text += c.toSave() + "\n";
+
+        }
+        return text;
+    }
+
+    public void save() {
+
+        try {
+
+            File file = new File("C:\\mycode\\oop\\incapsualrea\\proiectScoala\\src\\data\\courses.txt");
+            FileWriter fileWriter = new FileWriter(file);
+            PrintWriter printWriter = new PrintWriter(fileWriter);
+            printWriter.print(toSave());
+            printWriter.close();
+
+        } catch (IOException e) {
+
+        }
+
+    }
 }
+
+

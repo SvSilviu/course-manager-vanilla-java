@@ -56,5 +56,13 @@ public class Enrolment {
         return text;
     }
 
+    public String toSave(){
+
+       return this.id+","+this.courseId+","+this.userID;
+
+    }
+
 
 }
+
+
