@@ -133,7 +133,7 @@ public class ControlCourse {
     }
 
 
-    public ArrayList<Course> cursuriLibere(int profesorID) {
+    public ArrayList<Course> findForeignCourses(int profesorID) {
 
         ArrayList<Course> courseArrayList = new ArrayList<>();
         for (Course course : listaCursuri) {

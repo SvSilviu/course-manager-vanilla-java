@@ -142,7 +142,7 @@ public class ViewProfesor {
 
     public void cursuriUndeNuEstiInscris() {
 
-        ArrayList<Course> courseArrayList = controlCourse.cursuriLibere(profesorlogat.getId());
+        ArrayList<Course> courseArrayList = controlCourse.findForeignCourses(profesorlogat.getId());
         for (Course course : courseArrayList) {
             System.out.println(course.descriereaCursului());
         }
