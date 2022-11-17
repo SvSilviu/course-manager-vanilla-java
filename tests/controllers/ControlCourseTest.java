@@ -56,11 +56,20 @@ class ControlCourseTest {
         controlCourse.add(course3);
 
         assertEquals("Chimie", controlCourse.findByName("Chimie").getName());
-        assertEquals(44,controlCourse.findByName("Chimie").getId());
-        assertEquals("real",controlCourse.findByName("Chimie").getDepartament());
-        assertEquals(5,controlCourse.findByName("Chimie").getProfesorId());
+        assertEquals(44, controlCourse.findByName("Chimie").getId());
+        assertEquals("real", controlCourse.findByName("Chimie").getDepartament());
+        assertEquals(5, controlCourse.findByName("Chimie").getProfesorId());
 
     }
+
+    @Test
+    public void testFindByNameNullScenario() {
+
+        ControlCourse controlCourse = new ControlCourse();
+        assertEquals(null, controlCourse.findByName("kakakasdasdjas"));
+
+    }
+
 
     @Test
     public void testNrDeCursuriDeTipReal() {
@@ -90,7 +99,7 @@ class ControlCourseTest {
         controlCourse.add(course);
         controlCourse.add(course3);
 
-        assertEquals(initial+2,controlCourse.numarulDeCursuriDeTipUman());
+        assertEquals(initial + 2, controlCourse.numarulDeCursuriDeTipUman());
 
     }
 
@@ -173,11 +182,94 @@ class ControlCourseTest {
     @Test
     public void testStergereCurs() {
 
-//        ControlCourse controlCourse = new ControlCourse();
-//       controlCourse.stergereCurs("Desen");
-//       assertEquals("Desen",controlCourse.stergereCurs("Desen"));
-//
+        ControlCourse controlCourse = new ControlCourse();
+
+        int id = controlCourse.generateId();
+        Course course = new Course(id, "test", "uman", 5);
+        controlCourse.add(course);
+        assertEquals(id, controlCourse.findByName("test").getId());
+        controlCourse.stergereCurs("test");
+
+
+        assertEquals(null, controlCourse.findByName("test"));
+
+
     }
 
+    @Test
+    public void testFindByIdNullScenario() {
+        ControlCourse controlCourse = new ControlCourse();
+        assertEquals(null, controlCourse.findById(1231231231));
+    }
+
+    @Test
+    public void testFindByDepartament() {
+
+        //PRECONDTITE
+        ControlCourse controlCourse = new ControlCourse();
+        Course course = new Course(10, "Matematica", "TEST", 10);
+        controlCourse.add(course);
+
+
+        Course course1 = controlCourse.findByDepartament("TEST");
+
+
+        assertEquals(10, course1.getId());
+        assertEquals("Matematica", course1.getName());
+        assertEquals("TEST", course1.getDepartament());
+        assertEquals(10, course1.getProfesorId());
+
+    }
+
+    @Test
+    public void testFindByDepartamentNullScenario() {
+
+        ControlCourse controlCourse = new ControlCourse();
+        assertEquals(null, controlCourse.findByDepartament("jsajskaka"));
+    }
+
+    @Test
+    public void testGenerateID() {
+
+        ControlCourse controlCourse = new ControlCourse();
+
+        int id = controlCourse.generateId();
+
+        assertEquals(null, controlCourse.findById(id));
+
+    }
+
+    @Test
+    public void testCursuriLibere() {
+
+        ControlCourse controlCourse = new ControlCourse();
+        Course course = new Course(20, "Istorie", "uman", 20);
+        Course course1 = new Course(21, "Matematica", "real", 1);
+        Course course2 = new Course(22, "Fizica", "real", 1);
+        Course course3 = new Course(25, "Romana", "uman", 20);
+        Course course4 = new Course(44, "Chimie", "real", 5);
+
+        controlCourse.add(course);
+        controlCourse.add(course1);
+        controlCourse.add(course2);
+        controlCourse.add(course3);
+        controlCourse.add(course4);
+
+        ArrayList<Course> arrayList = controlCourse.findForeignCourses(20);
+
+        boolean test = true;
+
+        for (Course C : arrayList) {
+            if (C.getProfesorId() == 20){
+                test = false;
+            }
+
+        }
+
+
+        assertEquals(true, test);
+
+
+    }
 
 }
