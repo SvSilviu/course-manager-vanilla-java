@@ -3,6 +3,8 @@ package controllers;
 import models.Enrolment;
 import org.junit.jupiter.api.Test;
 
+import java.util.ArrayList;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class ControlEnrolmentTest {
@@ -10,13 +12,18 @@ public class ControlEnrolmentTest {
     @Test
     public void testLoadEnrolment(){
 
-        ControlEnrolment controlEnrolment = new ControlEnrolment();
-
+        ArrayList<Enrolment> enrolmentArrayList = new ArrayList<>();
         Enrolment enrolment =new Enrolment(1,2,4);
+
+        ControlEnrolment controlEnrolment = new ControlEnrolment();
+        controlEnrolment.loadEnrolment();
+
 
         int intialSize = controlEnrolment.size();
 
         controlEnrolment.addEnrolment(enrolment);
+        controlEnrolment.save();
+        controlEnrolment.loadEnrolment();
 
         assertEquals(intialSize+1,controlEnrolment.size());
 
@@ -33,5 +40,7 @@ public class ControlEnrolmentTest {
 
         assertEquals(1, controlEnrolment.celMaiFrecventatCurs());
     }
+
+    
 
 }

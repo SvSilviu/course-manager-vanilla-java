@@ -3,10 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="34636ee7-469f-4436-a876-18c75c2a7f41" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/ControlCourse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/ControlCourse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/ControlUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/ControlUser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/data/courses.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/courses.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/ViewProfesor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/ViewProfesor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/controllers/ControlCourseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/controllers/ControlCourseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/users.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/users.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/controllers/ControlEnrolmentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/controllers/ControlEnrolmentTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/controllers/ControlUserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/controllers/ControlUserTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -46,7 +46,8 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/mycode/oop/incapsualrea/ProiectAuto&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -58,7 +59,7 @@
       <recent name="models" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ControlCourseTest.testCursuriLibere">
+  <component name="RunManager" selected="JUnit.All in proiectScoala">
     <configuration name="All in proiectScoala" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="proiectScoala" />
       <option name="PACKAGE_NAME" value="" />
@@ -83,7 +84,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ControlCourseTest.testFindByNameNullScenario" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ControlUserTest.testLoadUsers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="proiectScoala" />
       <extension name="coverage">
         <pattern>
@@ -92,14 +93,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="controllers" />
-      <option name="MAIN_CLASS_NAME" value="controllers.ControlCourseTest" />
-      <option name="METHOD_NAME" value="testFindByNameNullScenario" />
+      <option name="MAIN_CLASS_NAME" value="controllers.ControlUserTest" />
+      <option name="METHOD_NAME" value="testLoadUsers" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ControlCourseTest.testGenerateID" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ControlUserTest.testReturnUserSiParolaNullScenario" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="proiectScoala" />
       <extension name="coverage">
         <pattern>
@@ -108,14 +109,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="controllers" />
-      <option name="MAIN_CLASS_NAME" value="controllers.ControlCourseTest" />
-      <option name="METHOD_NAME" value="testGenerateID" />
+      <option name="MAIN_CLASS_NAME" value="controllers.ControlUserTest" />
+      <option name="METHOD_NAME" value="testReturnUserSiParolaNullScenario" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ControlCourseTest.testStergereCurs" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ControlUserTest.testReturnUsernameSiParola" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="proiectScoala" />
       <extension name="coverage">
         <pattern>
@@ -124,8 +125,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="controllers" />
-      <option name="MAIN_CLASS_NAME" value="controllers.ControlCourseTest" />
-      <option name="METHOD_NAME" value="testStergereCurs" />
+      <option name="MAIN_CLASS_NAME" value="controllers.ControlUserTest" />
+      <option name="METHOD_NAME" value="testReturnUsernameSiParola" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -133,11 +134,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ControlCourseTest.testCursuriLibere" />
         <item itemvalue="JUnit.All in proiectScoala" />
-        <item itemvalue="JUnit.ControlCourseTest.testStergereCurs" />
-        <item itemvalue="JUnit.ControlCourseTest.testGenerateID" />
-        <item itemvalue="JUnit.ControlCourseTest.testFindByNameNullScenario" />
+        <item itemvalue="JUnit.ControlUserTest.testReturnUserSiParolaNullScenario" />
+        <item itemvalue="JUnit.ControlUserTest.testReturnUsernameSiParola" />
+        <item itemvalue="JUnit.ControlUserTest.testLoadUsers" />
+        <item itemvalue="JUnit.ControlCourseTest.testCursuriLibere" />
       </list>
     </recent_temporary>
   </component>
@@ -189,7 +190,7 @@
     <SUITE FILE_PATH="coverage/proiectScoala$ControlCourseTest.ic" NAME="ControlCourseTest Coverage Results" MODIFIED="1668709338344" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>controllers.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/proiectScoala$All_in_proiectScoala.ic" NAME="All in proiectScoala Coverage Results" MODIFIED="1668715147059" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/proiectScoala$All_in_proiectScoala.ic" NAME="All in proiectScoala Coverage Results" MODIFIED="1668756402173" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/proiectScoala$ControlEnrolmentTest_testLoadEnrolment.ic" NAME="ControlEnrolmentTest.testLoadEnrolment Coverage Results" MODIFIED="1668427872107" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>controllers.*</FILTER>
     </SUITE>
