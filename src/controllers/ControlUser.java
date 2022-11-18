@@ -58,16 +58,6 @@ public class ControlUser {
         return null;
     }
 
-    public void creareUser(User user) {
-
-
-
-        this.listaUsers.add(user);
-
-
-
-    }
-
     public void add(User user){
         this.listaUsers.add(user);
     }
