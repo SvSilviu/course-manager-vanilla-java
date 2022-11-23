@@ -163,7 +163,6 @@ public class ControlCourse {
         String text = "";
         for (Course c : listaCursuri) {
             text += c.toSave() + "\n";
-
         }
         return text;
     }
