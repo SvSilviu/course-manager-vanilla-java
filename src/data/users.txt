@@ -6,3 +6,14 @@
 1,Nume,Prenume,e-mail,parola,34,admin
 1,Nume,Prenume,e-mail,parola,34,admin
 1,Nume,Prenume,e-mail,parola,34,admin
+1,Nume,Prenume,e-mail,parola,34,admin
+1,Nume,Prenume,e-mail,parola,34,admin
+1,Nume,Prenume,e-mail,parola,34,admin
+1,Nume,Prenume,e-mail,parola,34,admin
+1,Nume,Prenume,e-mail,parola,34,admin
+1,Nume,Prenume,e-mail,parola,34,admin
+1,Nume,Prenume,e-mail,parola,34,admin
+1,Nume,Prenume,e-mail,parola,34,admin
+1,Nume,Prenume,e-mail,parola,34,admin
+1,Nume,Prenume,e-mail,parola,34,admin
+1,Nume,Prenume,e-mail,parola,34,admin
